@@ -53,13 +53,5 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     implementation 'org.springframework.kafka:spring-kafka'
-    implementation project(':commons-dto')
 
-}
-
-docker{
-	name "querypatternsvc"
-	dockerfile file('src/docker/Dockerfile')
-	copySpec.from(jar).rename(".*","app.jar")
-	buildArgs(['JAR_FILE': 'app.jar'])
 }
