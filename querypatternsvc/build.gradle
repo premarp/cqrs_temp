@@ -19,6 +19,13 @@ repositories {
 	mavenCentral()
 }
 
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
 
 ext {
 	set('springCloudVersion', "2021.0.4")
