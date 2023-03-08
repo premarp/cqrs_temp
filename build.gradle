@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 	id "com.palantir.docker" version "0.34.0"
 }
-
+mainClassName = 'com.skilltracker.querypatternsvc.QuerypatternsvcApplication'
 group = 'com.skilltracker'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
